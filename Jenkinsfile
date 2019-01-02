@@ -8,17 +8,17 @@ pipeline {
         }
         stage ( 'Compile') {
             steps {
-                sh '/opt/apache-maven-3.5.3/bin/mvn compile'
+                sh '/home/westpac/apache-maven-3.6.0/bin/mvn compile'
             }
         }
         stage ( ' Test Cases') {
             steps {
-                sh '/opt/apache-maven-3.5.3/bin/mvn test'
+                sh '/home/westpac/apache-maven-3.6.0/bin/mvn test'
             }
         }
         stage ( ' Package' ) {
             steps {
-                sh '/opt/apache-maven-3.5.3/bin/mvn package'
+                sh '/home/westpac/apache-maven-3.6.0/bin/mvn package'
             }
         }
     }
